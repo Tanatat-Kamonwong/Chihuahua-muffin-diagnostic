@@ -15,7 +15,7 @@ class MedicalImage(models.Model):
     RESULT_CHOICES = (
         ('PENDING', 'Pending'),
         ('CHIHUAHUA', 'Chihuahua'),
-        ('MUFFIN', 'Blueberry Muffin'),
+        ('MUFFIN', 'Muffin'),
     )
 
     patient = models.ForeignKey(Patient, on_delete=models.CASCADE, related_name='images')
